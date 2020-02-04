@@ -36,15 +36,31 @@
                       <li>
                           <a href="about.php">O DC-u</a>
                       </li>
+                      <?php if($_SESSION['korisnik'] != null){ ?>
                     <li>
                       <a href="filmovi.php">Filmovi</a>
                     </li>
                     <li>
                       <a href="pretragalikova.php">Pretraga likova</a>
                     </li>
+                          <?php if($_SESSION['admin'] == true){ ?>
                     <li>
                       <a href="administracija.php">Administracija</a>
                     </li>
+                              <?php } ?>
+                          <li>
+                              <a href="odjaviSe.php">Odjavi se</a>
+                          </li>
+                      <?php }else{
+                          ?>
+                          <li>
+                              <a href="ulogujSe.php">Uloguj se</a>
+                          </li>
+                          <li>
+                              <a href="registrujSe.php">Registruj se</a>
+                          </li>
+                      <?php
+                      } ?>
                   </ul>
                 </nav>
               </div>
