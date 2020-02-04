@@ -133,6 +133,12 @@ include "init.php";
             </div>
           </div>
         </div>
+          <div class="row">
+              <h3>Zanrovi</h3>
+              <ul id="zanrovi">
+
+              </ul>
+          </div>
 
       </div>
     </section>
@@ -152,6 +158,16 @@ include "init.php";
   <script src="js/animate.js"></script>
 
   <script src="js/custom.js"></script>
+      <script>
+          $.ajax({
+              url: 'podaciApisaGithaba.php',
+              success: function (podaci) {
+                  $.each(JSON.parse(podaci),function (i,podatak) {
+                      $("#zanrovi").append('<li>'+podatak+'</li>');
+                  })
+              }
+          })
+          </script>
 
 </body>
 
