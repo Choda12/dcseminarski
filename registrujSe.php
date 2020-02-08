@@ -48,13 +48,13 @@ include "init.php";
 
           <form method="POST" action="registrovanje.php">
               <label for="ime">Ime</label>
-              <input type="text" class="form-inline" name="ime" placeholder="Unesite vase ime">
+              <input type="text" class="form-inline" name="ime" placeholder="Unesite ime">
               <label for="prezime">Prezime</label>
-              <input type="text" class="form-inline" name="prezime" placeholder="Unesite vasr prezime">
+              <input type="text" class="form-inline" name="prezime" placeholder="Unesite prezime">
               <label for="username">Username</label>
-              <input type="text" class="form-inline" name="username" placeholder="Unesite vas korisnicki nalog">
+              <input type="text" class="form-inline" name="username" placeholder="Izaberite username">
               <label for="password">Password</label>
-              <input type="password" class="form-inline" name="password" placeholder="Unesite vasu korisnicku sifru">
+              <input type="password" class="form-inline" name="password" placeholder="Izaberite password">
               <hr>
               <input type="submit" class="btn btn-primary" name="login" value="Registruj se">
           </form>
