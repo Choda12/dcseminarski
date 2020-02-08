@@ -48,9 +48,9 @@ include "init.php";
 
           <form method="POST" action="logovanje.php">
               <label for="username">Username</label>
-              <input type="text" class="form-inline" name="username" placeholder="Unesite vas korisnicki nalog">
+              <input type="text" class="form-inline" name="username" placeholder="Unesite username">
               <label for="password">Password</label>
-              <input type="password" class="form-inline" name="password" placeholder="Unesite vasu korisnicku sifru">
+              <input type="password" class="form-inline" name="password" placeholder="Unesite password">
               <hr>
               <input type="submit" class="btn btn-primary" name="login" value="Uloguj se">
           </form>
