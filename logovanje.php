@@ -12,7 +12,7 @@ $rezultatUpita = $s->get_result();
 $uspesno = false;
 while($red = $rezultatUpita->fetch_object()){
     $_SESSION['korisnik'] = $red;
-    $_SESSION['admin'] = $red->rola == 'Admin';
+    $_SESSION['admin'] = $red->role == 'Admin';
     $uspesno = true;
 }
 
